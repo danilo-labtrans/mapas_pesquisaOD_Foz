@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_00ca067fd1eb866bf73c5511796bb57a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_00ca067fd1eb866bf73c5511796bb57a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_00ca067fd1eb866bf73c5511796bb57a = L.map(
+                "map_00ca067fd1eb866bf73c5511796bb57a",
+                {
+                    center: [-25.548186253968254, -54.554751111111116],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0d60aadc4b9cfa9700410b85fa44d756 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0d60aadc4b9cfa9700410b85fa44d756.addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+            var circle_marker_893bec293f764e728b9fcbc8a8e84659 = L.circleMarker(
+                [-25.545672, -54.564876],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_18a786d1403c66b3b36de7801100ef76 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e538d036aef692759ec641af67914d21 = $(`<div id="html_e538d036aef692759ec641af67914d21" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA IZIDORO PASTORELLO, 246<br><b>ID:</b> 207801061</div>`)[0];
+                popup_18a786d1403c66b3b36de7801100ef76.setContent(html_e538d036aef692759ec641af67914d21);
+            
+        
+
+        circle_marker_893bec293f764e728b9fcbc8a8e84659.bindPopup(popup_18a786d1403c66b3b36de7801100ef76)
+        ;
+
+        
+    
+    
+            var circle_marker_52696ffa8ea13efed6c33c2149ec1b1b = L.circleMarker(
+                [-25.561513, -54.564828],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_6960d2715c7c1f301845c448d53de286 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_eccd95f418659578586a29cd52c58761 = $(`<div id="html_eccd95f418659578586a29cd52c58761" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA DAS PITANGUEIRAS, 2736<br><b>ID:</b> 66301099</div>`)[0];
+                popup_6960d2715c7c1f301845c448d53de286.setContent(html_eccd95f418659578586a29cd52c58761);
+            
+        
+
+        circle_marker_52696ffa8ea13efed6c33c2149ec1b1b.bindPopup(popup_6960d2715c7c1f301845c448d53de286)
+        ;
+
+        
+    
+    
+            var circle_marker_b6ce5a0108aa9c8aba4ae585613a108f = L.circleMarker(
+                [-25.56526, -54.564762],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_3919fd0982a8ae9b9180ce2f0a01c772 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ee8eff23f1f1ea68412c5522f60f0d6f = $(`<div id="html_ee8eff23f1f1ea68412c5522f60f0d6f" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA DAS PITANGUEIRAS, 2365<br><b>ID:</b> 224852946</div>`)[0];
+                popup_3919fd0982a8ae9b9180ce2f0a01c772.setContent(html_ee8eff23f1f1ea68412c5522f60f0d6f);
+            
+        
+
+        circle_marker_b6ce5a0108aa9c8aba4ae585613a108f.bindPopup(popup_3919fd0982a8ae9b9180ce2f0a01c772)
+        ;
+
+        
+    
+    
+            var circle_marker_2ad76fd63cd48279daef5d8202bdb5c9 = L.circleMarker(
+                [-25.561148, -54.564317],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_30bc4c465b55b4c87a4c7ec33028f6f3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a87fad48345dd404c35b5d5b63a76436 = $(`<div id="html_a87fad48345dd404c35b5d5b63a76436" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA DOS EUCALIPTOS, 100<br><b>ID:</b> 66301086</div>`)[0];
+                popup_30bc4c465b55b4c87a4c7ec33028f6f3.setContent(html_a87fad48345dd404c35b5d5b63a76436);
+            
+        
+
+        circle_marker_2ad76fd63cd48279daef5d8202bdb5c9.bindPopup(popup_30bc4c465b55b4c87a4c7ec33028f6f3)
+        ;
+
+        
+    
+    
+            var circle_marker_51a612230c433e9209abaed11b56db53 = L.circleMarker(
+                [-25.548524, -54.563959],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_9d25d06cb00c3a1be6fa5111c46524fd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8ab2ba098eada63a3c30cbf0d46aa9db = $(`<div id="html_8ab2ba098eada63a3c30cbf0d46aa9db" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA ACYLINO DE CASTRO, 1080<br><b>ID:</b> 66300054</div>`)[0];
+                popup_9d25d06cb00c3a1be6fa5111c46524fd.setContent(html_8ab2ba098eada63a3c30cbf0d46aa9db);
+            
+        
+
+        circle_marker_51a612230c433e9209abaed11b56db53.bindPopup(popup_9d25d06cb00c3a1be6fa5111c46524fd)
+        ;
+
+        
+    
+    
+            var circle_marker_0beff391a293f7c0e9cfa98d07d839a2 = L.circleMarker(
+                [-25.558849, -54.563813],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_241832ad2ecb05103ab319a3a41a6ea1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_69476b8002e5c6d40860c3c3d933967d = $(`<div id="html_69476b8002e5c6d40860c3c3d933967d" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> AVENIDA DAS CATARATAS, 2000<br><b>ID:</b> 205837354</div>`)[0];
+                popup_241832ad2ecb05103ab319a3a41a6ea1.setContent(html_69476b8002e5c6d40860c3c3d933967d);
+            
+        
+
+        circle_marker_0beff391a293f7c0e9cfa98d07d839a2.bindPopup(popup_241832ad2ecb05103ab319a3a41a6ea1)
+        ;
+
+        
+    
+    
+            var circle_marker_bf4df1c5e0f2ca34ba0fbcac93cd9b0b = L.circleMarker(
+                [-25.553036, -54.563804],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_486dab13a065834cad3ab9b0f15eb640 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3c9d89bf469bfbb17f4ab1c6b296bf69 = $(`<div id="html_3c9d89bf469bfbb17f4ab1c6b296bf69" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA CARLOS WELTER, 549<br><b>ID:</b> 66300180</div>`)[0];
+                popup_486dab13a065834cad3ab9b0f15eb640.setContent(html_3c9d89bf469bfbb17f4ab1c6b296bf69);
+            
+        
+
+        circle_marker_bf4df1c5e0f2ca34ba0fbcac93cd9b0b.bindPopup(popup_486dab13a065834cad3ab9b0f15eb640)
+        ;
+
+        
+    
+    
+            var circle_marker_5b6ee3604de1263cbd0433f3b3f57542 = L.circleMarker(
+                [-25.549881, -54.563775],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_562b6855c403fcc08fde3b312bea15ad = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_021ebe95c7f20fb589a52d911cc56fd8 = $(`<div id="html_021ebe95c7f20fb589a52d911cc56fd8" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA PARIGOT DE SOUZA, 964<br><b>ID:</b> 212711108</div>`)[0];
+                popup_562b6855c403fcc08fde3b312bea15ad.setContent(html_021ebe95c7f20fb589a52d911cc56fd8);
+            
+        
+
+        circle_marker_5b6ee3604de1263cbd0433f3b3f57542.bindPopup(popup_562b6855c403fcc08fde3b312bea15ad)
+        ;
+
+        
+    
+    
+            var circle_marker_dadc352e276fcfbc5113e61ab1fbb8db = L.circleMarker(
+                [-25.5482, -54.56331],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_48a7592b449df561ae94483f96bd77cb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4eaaede7f8d3fb588d5bd234199d4be8 = $(`<div id="html_4eaaede7f8d3fb588d5bd234199d4be8" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA CARIJOS, 90<br><b>ID:</b> 207800913</div>`)[0];
+                popup_48a7592b449df561ae94483f96bd77cb.setContent(html_4eaaede7f8d3fb588d5bd234199d4be8);
+            
+        
+
+        circle_marker_dadc352e276fcfbc5113e61ab1fbb8db.bindPopup(popup_48a7592b449df561ae94483f96bd77cb)
+        ;
+
+        
+    
+    
+            var circle_marker_262560ecb3d427befedd0e012e1ef0af = L.circleMarker(
+                [-25.540039, -54.562824],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_7649bf72e05745f0ce576d29415aba31 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b4539ca29852be10c706eb9268396d11 = $(`<div id="html_b4539ca29852be10c706eb9268396d11" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA KAYAPO, 88<br><b>ID:</b> 212670717</div>`)[0];
+                popup_7649bf72e05745f0ce576d29415aba31.setContent(html_b4539ca29852be10c706eb9268396d11);
+            
+        
+
+        circle_marker_262560ecb3d427befedd0e012e1ef0af.bindPopup(popup_7649bf72e05745f0ce576d29415aba31)
+        ;
+
+        
+    
+    
+            var circle_marker_4fcb2305905c7d8b80288813c9583843 = L.circleMarker(
+                [-25.556853, -54.562521],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_8ee3ce920dfd2c52cb2d4e5794399ed0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fe558f757488af35c0eee015e3547054 = $(`<div id="html_fe558f757488af35c0eee015e3547054" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA ACACIO PEDROSO, 216<br><b>ID:</b> 207801559</div>`)[0];
+                popup_8ee3ce920dfd2c52cb2d4e5794399ed0.setContent(html_fe558f757488af35c0eee015e3547054);
+            
+        
+
+        circle_marker_4fcb2305905c7d8b80288813c9583843.bindPopup(popup_8ee3ce920dfd2c52cb2d4e5794399ed0)
+        ;
+
+        
+    
+    
+            var circle_marker_54f4ce590eca96931ca8f0901ef9b73a = L.circleMarker(
+                [-25.556546, -54.562373],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_ad5d927aede6613ad60830352af1e6b8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_73b06fd6b1d6b996fe5cbc8bc1b8bfc9 = $(`<div id="html_73b06fd6b1d6b996fe5cbc8bc1b8bfc9" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA ACACIO PEDROSO, 216<br><b>ID:</b> 66302238</div>`)[0];
+                popup_ad5d927aede6613ad60830352af1e6b8.setContent(html_73b06fd6b1d6b996fe5cbc8bc1b8bfc9);
+            
+        
+
+        circle_marker_54f4ce590eca96931ca8f0901ef9b73a.bindPopup(popup_ad5d927aede6613ad60830352af1e6b8)
+        ;
+
+        
+    
+    
+            var circle_marker_33b215bde35c5128144956114ed3404f = L.circleMarker(
+                [-25.554816, -54.562253],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_6c0121ecffa73851227c7104b3a72b38 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e4844e1076a84cc89051e6edb28d43a5 = $(`<div id="html_e4844e1076a84cc89051e6edb28d43a5" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA ACACIO PEDROSO, 434<br><b>ID:</b> 110169396</div>`)[0];
+                popup_6c0121ecffa73851227c7104b3a72b38.setContent(html_e4844e1076a84cc89051e6edb28d43a5);
+            
+        
+
+        circle_marker_33b215bde35c5128144956114ed3404f.bindPopup(popup_6c0121ecffa73851227c7104b3a72b38)
+        ;
+
+        
+    
+    
+            var circle_marker_b32c17b4b1047a7bfaece061913ef6d0 = L.circleMarker(
+                [-25.550019, -54.561973],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_805e680719a519643623af4098b8c652 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d49ea748b24bdafc6aca4a2d583c0cb4 = $(`<div id="html_d49ea748b24bdafc6aca4a2d583c0cb4" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA ACACIO PEDROSO, 956<br><b>ID:</b> 224860087</div>`)[0];
+                popup_805e680719a519643623af4098b8c652.setContent(html_d49ea748b24bdafc6aca4a2d583c0cb4);
+            
+        
+
+        circle_marker_b32c17b4b1047a7bfaece061913ef6d0.bindPopup(popup_805e680719a519643623af4098b8c652)
+        ;
+
+        
+    
+    
+            var circle_marker_374714f1618d2c7c769e1653ca4e3747 = L.circleMarker(
+                [-25.547373, -54.561795],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_82b3a436c0e04e9c648fe947b30f8c22 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a569880212797e0d5dc72a00ce82e751 = $(`<div id="html_a569880212797e0d5dc72a00ce82e751" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> AVENIDA FELIPE WANDSCHEER, 2645<br><b>ID:</b> 207800893</div>`)[0];
+                popup_82b3a436c0e04e9c648fe947b30f8c22.setContent(html_a569880212797e0d5dc72a00ce82e751);
+            
+        
+
+        circle_marker_374714f1618d2c7c769e1653ca4e3747.bindPopup(popup_82b3a436c0e04e9c648fe947b30f8c22)
+        ;
+
+        
+    
+    
+            var circle_marker_44cb4b05b1d0c71dde16b60a14e9a322 = L.circleMarker(
+                [-25.557004, -54.561787],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_606a784354eeb9e4c040ae8e3e4af119 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6a8b3e4830e370efafe7c67ebeebd9d7 = $(`<div id="html_6a8b3e4830e370efafe7c67ebeebd9d7" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA ACACIO PEDROSO, 216<br><b>ID:</b> 66302099</div>`)[0];
+                popup_606a784354eeb9e4c040ae8e3e4af119.setContent(html_6a8b3e4830e370efafe7c67ebeebd9d7);
+            
+        
+
+        circle_marker_44cb4b05b1d0c71dde16b60a14e9a322.bindPopup(popup_606a784354eeb9e4c040ae8e3e4af119)
+        ;
+
+        
+    
+    
+            var circle_marker_1211bb95821691dc76acb1443f283b9f = L.circleMarker(
+                [-25.557004, -54.561787],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_26be2e4891bc896a5b54f3dfb184a7aa = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_baa764d65e410d7f0b10aeb604d3c247 = $(`<div id="html_baa764d65e410d7f0b10aeb604d3c247" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA ACACIO PEDROSO, 216<br><b>ID:</b> 66302138</div>`)[0];
+                popup_26be2e4891bc896a5b54f3dfb184a7aa.setContent(html_baa764d65e410d7f0b10aeb604d3c247);
+            
+        
+
+        circle_marker_1211bb95821691dc76acb1443f283b9f.bindPopup(popup_26be2e4891bc896a5b54f3dfb184a7aa)
+        ;
+
+        
+    
+    
+            var circle_marker_10ec5ae0655b05d65c72efba64cef584 = L.circleMarker(
+                [-25.551425, -54.561051],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_e3d64a07bf9739c1a89d7830260affff = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_53110636ac3d76685488ad198916e54b = $(`<div id="html_53110636ac3d76685488ad198916e54b" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA HARRY SHINKE, 1010<br><b>ID:</b> 212712295</div>`)[0];
+                popup_e3d64a07bf9739c1a89d7830260affff.setContent(html_53110636ac3d76685488ad198916e54b);
+            
+        
+
+        circle_marker_10ec5ae0655b05d65c72efba64cef584.bindPopup(popup_e3d64a07bf9739c1a89d7830260affff)
+        ;
+
+        
+    
+    
+            var circle_marker_bf396c6072a3db4b48cfb6025727bb18 = L.circleMarker(
+                [-25.542089, -54.560814],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_52f2f0057a4d434dcfcc0847e3ccd5ae = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1522dd2e607d3ed3a6e0230cd7ba577a = $(`<div id="html_1522dd2e607d3ed3a6e0230cd7ba577a" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA JORGE SANWAIS, 3254<br><b>ID:</b> 66297073</div>`)[0];
+                popup_52f2f0057a4d434dcfcc0847e3ccd5ae.setContent(html_1522dd2e607d3ed3a6e0230cd7ba577a);
+            
+        
+
+        circle_marker_bf396c6072a3db4b48cfb6025727bb18.bindPopup(popup_52f2f0057a4d434dcfcc0847e3ccd5ae)
+        ;
+
+        
+    
+    
+            var circle_marker_e523c81692950143e79b77478f125781 = L.circleMarker(
+                [-25.542493, -54.560787],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_aec8ab0e99f22704e2bcd82663104ef8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a97d35e3b167fa17bf3220f1b3cfd5b1 = $(`<div id="html_a97d35e3b167fa17bf3220f1b3cfd5b1" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> AVENIDA JOAO PAULO II, 468<br><b>ID:</b> 66297182</div>`)[0];
+                popup_aec8ab0e99f22704e2bcd82663104ef8.setContent(html_a97d35e3b167fa17bf3220f1b3cfd5b1);
+            
+        
+
+        circle_marker_e523c81692950143e79b77478f125781.bindPopup(popup_aec8ab0e99f22704e2bcd82663104ef8)
+        ;
+
+        
+    
+    
+            var circle_marker_358246b7a8c067748a79131d08de65fc = L.circleMarker(
+                [-25.542493, -54.560769],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_3bbf264aa676aedc9b767670f5e4c6c1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_87eead6aff023b3f4aaefe81fe16053a = $(`<div id="html_87eead6aff023b3f4aaefe81fe16053a" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> AVENIDA JOAO PAULO II, 468<br><b>ID:</b> 66297083</div>`)[0];
+                popup_3bbf264aa676aedc9b767670f5e4c6c1.setContent(html_87eead6aff023b3f4aaefe81fe16053a);
+            
+        
+
+        circle_marker_358246b7a8c067748a79131d08de65fc.bindPopup(popup_3bbf264aa676aedc9b767670f5e4c6c1)
+        ;
+
+        
+    
+    
+            var circle_marker_33fcdef4619cebde093e2d3ee58e06a5 = L.circleMarker(
+                [-25.542485, -54.560762],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_39fe67780d8daeb7e96f5564eede70cb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_51e1f14740950924222b0a87908a9ba8 = $(`<div id="html_51e1f14740950924222b0a87908a9ba8" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> AVENIDA JOAO PAULO II, 468<br><b>ID:</b> 66297111</div>`)[0];
+                popup_39fe67780d8daeb7e96f5564eede70cb.setContent(html_51e1f14740950924222b0a87908a9ba8);
+            
+        
+
+        circle_marker_33fcdef4619cebde093e2d3ee58e06a5.bindPopup(popup_39fe67780d8daeb7e96f5564eede70cb)
+        ;
+
+        
+    
+    
+            var circle_marker_a1caae6839e066a1433fb5bc51fa28e7 = L.circleMarker(
+                [-25.547547, -54.559821],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_933238ff8bba98dded3678dc4df31c9d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f3b7e75f1c58151d7b1fd5f03fbe1d6b = $(`<div id="html_f3b7e75f1c58151d7b1fd5f03fbe1d6b" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA JOAO LOBATO DA MOTA MACHADO, 89<br><b>ID:</b> 66297038</div>`)[0];
+                popup_933238ff8bba98dded3678dc4df31c9d.setContent(html_f3b7e75f1c58151d7b1fd5f03fbe1d6b);
+            
+        
+
+        circle_marker_a1caae6839e066a1433fb5bc51fa28e7.bindPopup(popup_933238ff8bba98dded3678dc4df31c9d)
+        ;
+
+        
+    
+    
+            var circle_marker_94ce462fb715941fb646269c472d09af = L.circleMarker(
+                [-25.55104, -54.559047],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_9882776251b2d845a36796a17c232a59 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ca665abe2b3fd2e0dc5a46b468e9bc85 = $(`<div id="html_ca665abe2b3fd2e0dc5a46b468e9bc85" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA FRANCISCO RACKI, 931<br><b>ID:</b> 98155809</div>`)[0];
+                popup_9882776251b2d845a36796a17c232a59.setContent(html_ca665abe2b3fd2e0dc5a46b468e9bc85);
+            
+        
+
+        circle_marker_94ce462fb715941fb646269c472d09af.bindPopup(popup_9882776251b2d845a36796a17c232a59)
+        ;
+
+        
+    
+    
+            var circle_marker_a9e65ed2d48639782d01e2d95c0133f2 = L.circleMarker(
+                [-25.56737, -54.558964],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_fdcef912f12dba0b6ef044eff659a2b3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e625ab94dcacdf8adb23bfa62622fa2d = $(`<div id="html_e625ab94dcacdf8adb23bfa62622fa2d" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> AVENIDA DAS CATARATAS, 3200<br><b>ID:</b> 212664749</div>`)[0];
+                popup_fdcef912f12dba0b6ef044eff659a2b3.setContent(html_e625ab94dcacdf8adb23bfa62622fa2d);
+            
+        
+
+        circle_marker_a9e65ed2d48639782d01e2d95c0133f2.bindPopup(popup_fdcef912f12dba0b6ef044eff659a2b3)
+        ;
+
+        
+    
+    
+            var circle_marker_dd9fc8e46e986f082b0895f1897ecc1b = L.circleMarker(
+                [-25.548201, -54.557408],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_3ee9633d4b5c50822cf130e00ca1427e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_afa48fde714704d0918e9ca5ef894c80 = $(`<div id="html_afa48fde714704d0918e9ca5ef894c80" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> AVENIDA FRANCISCO JOSE LUDOLF GOMES, 1408<br><b>ID:</b> 66297414</div>`)[0];
+                popup_3ee9633d4b5c50822cf130e00ca1427e.setContent(html_afa48fde714704d0918e9ca5ef894c80);
+            
+        
+
+        circle_marker_dd9fc8e46e986f082b0895f1897ecc1b.bindPopup(popup_3ee9633d4b5c50822cf130e00ca1427e)
+        ;
+
+        
+    
+    
+            var circle_marker_ff36e9cbb83ed7c683c4882efc1c9917 = L.circleMarker(
+                [-25.548201, -54.557408],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_8c10c6ef786d7d53502de3f1c5c901a5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3dc571f93978923df78a15342207cff4 = $(`<div id="html_3dc571f93978923df78a15342207cff4" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> AVENIDA FRANCISCO JOSE LUDOLF GOMES, 1408<br><b>ID:</b> 66297417</div>`)[0];
+                popup_8c10c6ef786d7d53502de3f1c5c901a5.setContent(html_3dc571f93978923df78a15342207cff4);
+            
+        
+
+        circle_marker_ff36e9cbb83ed7c683c4882efc1c9917.bindPopup(popup_8c10c6ef786d7d53502de3f1c5c901a5)
+        ;
+
+        
+    
+    
+            var circle_marker_04c100b10236e12eea68d1396a602a58 = L.circleMarker(
+                [-25.545326, -54.556836],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_6e8c026c4d5206e21852a5f792ab16a4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a1497fe3488ed355a3d2b1f57ab34b9b = $(`<div id="html_a1497fe3488ed355a3d2b1f57ab34b9b" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> AVENIDA FRANCISCO JOSE LUDOLF GOMES, 1075<br><b>ID:</b> 66296058</div>`)[0];
+                popup_6e8c026c4d5206e21852a5f792ab16a4.setContent(html_a1497fe3488ed355a3d2b1f57ab34b9b);
+            
+        
+
+        circle_marker_04c100b10236e12eea68d1396a602a58.bindPopup(popup_6e8c026c4d5206e21852a5f792ab16a4)
+        ;
+
+        
+    
+    
+            var circle_marker_951a6177f76ed0ec331e66eb58492fda = L.circleMarker(
+                [-25.541616, -54.555835],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_8145b649be33e408994516c0b3650dea = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1024c87f6bd0cf969032e9e489d8651e = $(`<div id="html_1024c87f6bd0cf969032e9e489d8651e" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA ERNESTO FREIERTAG, 787<br><b>ID:</b> 205237475</div>`)[0];
+                popup_8145b649be33e408994516c0b3650dea.setContent(html_1024c87f6bd0cf969032e9e489d8651e);
+            
+        
+
+        circle_marker_951a6177f76ed0ec331e66eb58492fda.bindPopup(popup_8145b649be33e408994516c0b3650dea)
+        ;
+
+        
+    
+    
+            var circle_marker_2b2cd146b107ee9e4b92148bb78f0b49 = L.circleMarker(
+                [-25.544693, -54.555167],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_17ef666ec273adb516d8d8ab37f2d625 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f328f8bdc1133fdbea0a890cf26aede2 = $(`<div id="html_f328f8bdc1133fdbea0a890cf26aede2" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA JOAQUIM GUIMARAES, 451<br><b>ID:</b> 66295847</div>`)[0];
+                popup_17ef666ec273adb516d8d8ab37f2d625.setContent(html_f328f8bdc1133fdbea0a890cf26aede2);
+            
+        
+
+        circle_marker_2b2cd146b107ee9e4b92148bb78f0b49.bindPopup(popup_17ef666ec273adb516d8d8ab37f2d625)
+        ;
+
+        
+    
+    
+            var circle_marker_b0e3a643515ddfc4ac9d0a5cfc8f3e29 = L.circleMarker(
+                [-25.545531, -54.554451],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_dd5258ac2a8205aefbb13fd15672ba14 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ce8d11467affbd2a598a46e1754afb0c = $(`<div id="html_ce8d11467affbd2a598a46e1754afb0c" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA DIEGO INACIO VERA, 356<br><b>ID:</b> 66295959</div>`)[0];
+                popup_dd5258ac2a8205aefbb13fd15672ba14.setContent(html_ce8d11467affbd2a598a46e1754afb0c);
+            
+        
+
+        circle_marker_b0e3a643515ddfc4ac9d0a5cfc8f3e29.bindPopup(popup_dd5258ac2a8205aefbb13fd15672ba14)
+        ;
+
+        
+    
+    
+            var circle_marker_370e8ed66e7d11ac079fbd03942a445d = L.circleMarker(
+                [-25.542586, -54.554444],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_575d7c923b5df848fe056198800cae0e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cf3143209ca581c654b5a26735a627be = $(`<div id="html_cf3143209ca581c654b5a26735a627be" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA DIEGO INACIO VERA, 684<br><b>ID:</b> 66296178</div>`)[0];
+                popup_575d7c923b5df848fe056198800cae0e.setContent(html_cf3143209ca581c654b5a26735a627be);
+            
+        
+
+        circle_marker_370e8ed66e7d11ac079fbd03942a445d.bindPopup(popup_575d7c923b5df848fe056198800cae0e)
+        ;
+
+        
+    
+    
+            var circle_marker_000612a34aea8e33e35fbc43ef92602d = L.circleMarker(
+                [-25.547363, -54.553949],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_ca557bb818e06fcb491650074286c671 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bed59bf339ef4d62e9262211c8af4c31 = $(`<div id="html_bed59bf339ef4d62e9262211c8af4c31" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA AIRTON RAMOS, 147<br><b>ID:</b> 66295972</div>`)[0];
+                popup_ca557bb818e06fcb491650074286c671.setContent(html_bed59bf339ef4d62e9262211c8af4c31);
+            
+        
+
+        circle_marker_000612a34aea8e33e35fbc43ef92602d.bindPopup(popup_ca557bb818e06fcb491650074286c671)
+        ;
+
+        
+    
+    
+            var circle_marker_762b53ef67daebee9df680c05e4ea61f = L.circleMarker(
+                [-25.546992, -54.553941],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_2eace1a69140c49db2f9f9d96a64b105 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_52c2744d8394999b6af1f3b9d1ab2dc0 = $(`<div id="html_52c2744d8394999b6af1f3b9d1ab2dc0" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA AIRTON RAMOS, 195<br><b>ID:</b> 66295968</div>`)[0];
+                popup_2eace1a69140c49db2f9f9d96a64b105.setContent(html_52c2744d8394999b6af1f3b9d1ab2dc0);
+            
+        
+
+        circle_marker_762b53ef67daebee9df680c05e4ea61f.bindPopup(popup_2eace1a69140c49db2f9f9d96a64b105)
+        ;
+
+        
+    
+    
+            var circle_marker_12c80bb7a797a1931bdaae6353cfa991 = L.circleMarker(
+                [-25.548383, -54.553402],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_2a3c631a1a48dda2661febde22be10fc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7154995f18639757d3030e1d5a212757 = $(`<div id="html_7154995f18639757d3030e1d5a212757" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA ARTHUR TEXDORF, 66<br><b>ID:</b> 206516671</div>`)[0];
+                popup_2a3c631a1a48dda2661febde22be10fc.setContent(html_7154995f18639757d3030e1d5a212757);
+            
+        
+
+        circle_marker_12c80bb7a797a1931bdaae6353cfa991.bindPopup(popup_2a3c631a1a48dda2661febde22be10fc)
+        ;
+
+        
+    
+    
+            var circle_marker_a8d8161387f1e37575a1c51a0980409f = L.circleMarker(
+                [-25.541191, -54.552738],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_57d19c7660c72b1a9cec05e7259928fc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_48d25cd2354f456962a45e8fcf628f9d = $(`<div id="html_48d25cd2354f456962a45e8fcf628f9d" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA ALMIR MACHADO NUNES, 859<br><b>ID:</b> 66295282</div>`)[0];
+                popup_57d19c7660c72b1a9cec05e7259928fc.setContent(html_48d25cd2354f456962a45e8fcf628f9d);
+            
+        
+
+        circle_marker_a8d8161387f1e37575a1c51a0980409f.bindPopup(popup_57d19c7660c72b1a9cec05e7259928fc)
+        ;
+
+        
+    
+    
+            var circle_marker_5a0f340792729bd5a250f469e54ec545 = L.circleMarker(
+                [-25.540032, -54.552588],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_0e65dec2a786272d1615a627b228c31b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f30583632af63f319b446c5b29b712db = $(`<div id="html_f30583632af63f319b446c5b29b712db" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA ALMIR MACHADO NUNES, 986<br><b>ID:</b> 66296454</div>`)[0];
+                popup_0e65dec2a786272d1615a627b228c31b.setContent(html_f30583632af63f319b446c5b29b712db);
+            
+        
+
+        circle_marker_5a0f340792729bd5a250f469e54ec545.bindPopup(popup_0e65dec2a786272d1615a627b228c31b)
+        ;
+
+        
+    
+    
+            var circle_marker_434817c6a70222d0da5fb8cb51ee8687 = L.circleMarker(
+                [-25.541082, -54.551582],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_00c9f23833b4bf04fad062d7f26514e0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_28cb76099dcf8b019257439a47bdd370 = $(`<div id="html_28cb76099dcf8b019257439a47bdd370" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA BARTOLOMEU DE GUSMAO, 4180<br><b>ID:</b> 66293741</div>`)[0];
+                popup_00c9f23833b4bf04fad062d7f26514e0.setContent(html_28cb76099dcf8b019257439a47bdd370);
+            
+        
+
+        circle_marker_434817c6a70222d0da5fb8cb51ee8687.bindPopup(popup_00c9f23833b4bf04fad062d7f26514e0)
+        ;
+
+        
+    
+    
+            var circle_marker_58cb987026a7d4545cad4ba7c13248a2 = L.circleMarker(
+                [-25.544326, -54.551399],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_efa9ec21c52126a5f715285c9dfb47a2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2375cb7e98bd9acfe7d6fd9f36b1ed36 = $(`<div id="html_2375cb7e98bd9acfe7d6fd9f36b1ed36" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA FRANCISCO PADILHA, 23<br><b>ID:</b> 66294584</div>`)[0];
+                popup_efa9ec21c52126a5f715285c9dfb47a2.setContent(html_2375cb7e98bd9acfe7d6fd9f36b1ed36);
+            
+        
+
+        circle_marker_58cb987026a7d4545cad4ba7c13248a2.bindPopup(popup_efa9ec21c52126a5f715285c9dfb47a2)
+        ;
+
+        
+    
+    
+            var circle_marker_0f8d3482695e3459d492d09dd801948f = L.circleMarker(
+                [-25.546073, -54.551317],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_7bff7fd29c1daf991140994c45f2421f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5887c90c044cb66c0a2b088e9f99a073 = $(`<div id="html_5887c90c044cb66c0a2b088e9f99a073" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA FRANCISCO PADILHA, 76<br><b>ID:</b> 206847746</div>`)[0];
+                popup_7bff7fd29c1daf991140994c45f2421f.setContent(html_5887c90c044cb66c0a2b088e9f99a073);
+            
+        
+
+        circle_marker_0f8d3482695e3459d492d09dd801948f.bindPopup(popup_7bff7fd29c1daf991140994c45f2421f)
+        ;
+
+        
+    
+    
+            var circle_marker_a12cc6cee509d9dc77b6402fe89d6cc5 = L.circleMarker(
+                [-25.545024, -54.550814],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_a1a19979c355cdcb67c8d1c01fdf2737 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_365840bb63defb49b50901f141f5dcfc = $(`<div id="html_365840bb63defb49b50901f141f5dcfc" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> AVENIDA POR DO SOL, 439<br><b>ID:</b> 66294321</div>`)[0];
+                popup_a1a19979c355cdcb67c8d1c01fdf2737.setContent(html_365840bb63defb49b50901f141f5dcfc);
+            
+        
+
+        circle_marker_a12cc6cee509d9dc77b6402fe89d6cc5.bindPopup(popup_a1a19979c355cdcb67c8d1c01fdf2737)
+        ;
+
+        
+    
+    
+            var circle_marker_b8f91fc77350f19b4c837a9eada2c799 = L.circleMarker(
+                [-25.547974, -54.550747],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_1520aaaa1c59229d4a72a11d2d396595 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_54d50cdd9fb88d205d7d06bce87dff40 = $(`<div id="html_54d50cdd9fb88d205d7d06bce87dff40" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> AVENIDA POR DO SOL, 101<br><b>ID:</b> 206352977</div>`)[0];
+                popup_1520aaaa1c59229d4a72a11d2d396595.setContent(html_54d50cdd9fb88d205d7d06bce87dff40);
+            
+        
+
+        circle_marker_b8f91fc77350f19b4c837a9eada2c799.bindPopup(popup_1520aaaa1c59229d4a72a11d2d396595)
+        ;
+
+        
+    
+    
+            var circle_marker_6b1da1ce558872cb2f6ecc48a6553cec = L.circleMarker(
+                [-25.540092, -54.550483],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_478633f8c624345ee98084a168c9bcbc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2dfc4e04b582fbeba60c95c6507a3d8d = $(`<div id="html_2dfc4e04b582fbeba60c95c6507a3d8d" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> AVENIDA POR DO SOL, 992<br><b>ID:</b> 66293422</div>`)[0];
+                popup_478633f8c624345ee98084a168c9bcbc.setContent(html_2dfc4e04b582fbeba60c95c6507a3d8d);
+            
+        
+
+        circle_marker_6b1da1ce558872cb2f6ecc48a6553cec.bindPopup(popup_478633f8c624345ee98084a168c9bcbc)
+        ;
+
+        
+    
+    
+            var circle_marker_ef2b9e0b1d077cc05c17180058971e84 = L.circleMarker(
+                [-25.545881, -54.549979],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_f48467d95a0bf0af2f33c19aabdd4f39 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9fe512b5655785847dda19c7bd756644 = $(`<div id="html_9fe512b5655785847dda19c7bd756644" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA BELGICA, 157<br><b>ID:</b> 66368269</div>`)[0];
+                popup_f48467d95a0bf0af2f33c19aabdd4f39.setContent(html_9fe512b5655785847dda19c7bd756644);
+            
+        
+
+        circle_marker_ef2b9e0b1d077cc05c17180058971e84.bindPopup(popup_f48467d95a0bf0af2f33c19aabdd4f39)
+        ;
+
+        
+    
+    
+            var circle_marker_54a9d5bda4e860718bc11bd2ce09a1fd = L.circleMarker(
+                [-25.543991, -54.549151],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_96ef2ae2690d03bac1b220c61a1a6322 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d2f4d3f6e49eddcd140ef4fc75f01009 = $(`<div id="html_d2f4d3f6e49eddcd140ef4fc75f01009" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA NORUEGA, 294<br><b>ID:</b> 66368144</div>`)[0];
+                popup_96ef2ae2690d03bac1b220c61a1a6322.setContent(html_d2f4d3f6e49eddcd140ef4fc75f01009);
+            
+        
+
+        circle_marker_54a9d5bda4e860718bc11bd2ce09a1fd.bindPopup(popup_96ef2ae2690d03bac1b220c61a1a6322)
+        ;
+
+        
+    
+    
+            var circle_marker_98ab3fef50d63946291aff698696723a = L.circleMarker(
+                [-25.545938, -54.548774],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_01eb73c38739765c16ebff7c2f757a0f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c00fb7333f3f23bebf8597da52a6924f = $(`<div id="html_c00fb7333f3f23bebf8597da52a6924f" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA GRECIA, 87<br><b>ID:</b> 205844328</div>`)[0];
+                popup_01eb73c38739765c16ebff7c2f757a0f.setContent(html_c00fb7333f3f23bebf8597da52a6924f);
+            
+        
+
+        circle_marker_98ab3fef50d63946291aff698696723a.bindPopup(popup_01eb73c38739765c16ebff7c2f757a0f)
+        ;
+
+        
+    
+    
+            var circle_marker_47044f5e7f72f1f26ac6842e5bb645bf = L.circleMarker(
+                [-25.54233, -54.548752],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_c3a00b9dc4a8f0b4b3355a9b0b53edef = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d47d5d733650eea66a9044f286c195c3 = $(`<div id="html_d47d5d733650eea66a9044f286c195c3" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA JORGE SANWAIS, 4462<br><b>ID:</b> 219084364</div>`)[0];
+                popup_c3a00b9dc4a8f0b4b3355a9b0b53edef.setContent(html_d47d5d733650eea66a9044f286c195c3);
+            
+        
+
+        circle_marker_47044f5e7f72f1f26ac6842e5bb645bf.bindPopup(popup_c3a00b9dc4a8f0b4b3355a9b0b53edef)
+        ;
+
+        
+    
+    
+            var circle_marker_da3a33e5f63e825a50d2ce8312785c36 = L.circleMarker(
+                [-25.539922, -54.548421],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_ad70a586adcbb11d90e8dbb5193c4503 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f30afaeb71db2c983aaf7ce210879227 = $(`<div id="html_f30afaeb71db2c983aaf7ce210879227" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA ESTANCIA VELHA, 226<br><b>ID:</b> 66293459</div>`)[0];
+                popup_ad70a586adcbb11d90e8dbb5193c4503.setContent(html_f30afaeb71db2c983aaf7ce210879227);
+            
+        
+
+        circle_marker_da3a33e5f63e825a50d2ce8312785c36.bindPopup(popup_ad70a586adcbb11d90e8dbb5193c4503)
+        ;
+
+        
+    
+    
+            var circle_marker_0a574dbe52f84c062f66004490a8a69c = L.circleMarker(
+                [-25.543272, -54.548025],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_f530df8c0a128419fa76a01b1e891c12 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3ec4c6c5cc95044cacc1b9efa9d837d2 = $(`<div id="html_3ec4c6c5cc95044cacc1b9efa9d837d2" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA EGITO, 640<br><b>ID:</b> 66368020</div>`)[0];
+                popup_f530df8c0a128419fa76a01b1e891c12.setContent(html_3ec4c6c5cc95044cacc1b9efa9d837d2);
+            
+        
+
+        circle_marker_0a574dbe52f84c062f66004490a8a69c.bindPopup(popup_f530df8c0a128419fa76a01b1e891c12)
+        ;
+
+        
+    
+    
+            var circle_marker_8cd661f52e193303504b45815a7ba4a3 = L.circleMarker(
+                [-25.545944, -54.547522],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_bb2907c829a3727b8cd56b62a99f7d13 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d3433b3b172b6fc456add08e2e828342 = $(`<div id="html_d3433b3b172b6fc456add08e2e828342" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA ARAMA GENTIL DIAS DA SILVA, 392<br><b>ID:</b> 219289707</div>`)[0];
+                popup_bb2907c829a3727b8cd56b62a99f7d13.setContent(html_d3433b3b172b6fc456add08e2e828342);
+            
+        
+
+        circle_marker_8cd661f52e193303504b45815a7ba4a3.bindPopup(popup_bb2907c829a3727b8cd56b62a99f7d13)
+        ;
+
+        
+    
+    
+            var circle_marker_4d6c6c5fffea86c7ecd966875b7a555c = L.circleMarker(
+                [-25.542364, -54.547237],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_3e399ba07abbb074caf6d1e772204e6b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_89664c406d74918c1499a55d351caaad = $(`<div id="html_89664c406d74918c1499a55d351caaad" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA JORGE SANWAIS, 4606<br><b>ID:</b> 219084452</div>`)[0];
+                popup_3e399ba07abbb074caf6d1e772204e6b.setContent(html_89664c406d74918c1499a55d351caaad);
+            
+        
+
+        circle_marker_4d6c6c5fffea86c7ecd966875b7a555c.bindPopup(popup_3e399ba07abbb074caf6d1e772204e6b)
+        ;
+
+        
+    
+    
+            var circle_marker_b1d6281e0119f9b1a1dc9ed613771194 = L.circleMarker(
+                [-25.540313, -54.547213],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_44d639e3ddb3f1e0ac9cd2bba038f44c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_623453c2009d4a94e406b7e994ff4658 = $(`<div id="html_623453c2009d4a94e406b7e994ff4658" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA FOZ DO AREIA, 182<br><b>ID:</b> 66293473</div>`)[0];
+                popup_44d639e3ddb3f1e0ac9cd2bba038f44c.setContent(html_623453c2009d4a94e406b7e994ff4658);
+            
+        
+
+        circle_marker_b1d6281e0119f9b1a1dc9ed613771194.bindPopup(popup_44d639e3ddb3f1e0ac9cd2bba038f44c)
+        ;
+
+        
+    
+    
+            var circle_marker_6f7717e0adf73e2662481b8917d6ec72 = L.circleMarker(
+                [-25.545412, -54.546873],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_7bb14fad6a91a336cfd73a92c16b8dd4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_13393fddfb3d35879023c61aee4bbdb9 = $(`<div id="html_13393fddfb3d35879023c61aee4bbdb9" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA JOSE CASTAGNARO, 482<br><b>ID:</b> 219289789</div>`)[0];
+                popup_7bb14fad6a91a336cfd73a92c16b8dd4.setContent(html_13393fddfb3d35879023c61aee4bbdb9);
+            
+        
+
+        circle_marker_6f7717e0adf73e2662481b8917d6ec72.bindPopup(popup_7bb14fad6a91a336cfd73a92c16b8dd4)
+        ;
+
+        
+    
+    
+            var circle_marker_cfcad5625aeb263abf82237525618478 = L.circleMarker(
+                [-25.552368, -54.546527],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_ffc90385e1a6ed690459fa501069a9fd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_23be449c337872f11c8bb346a04584f5 = $(`<div id="html_23be449c337872f11c8bb346a04584f5" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA ROQUE PIRES DE BARROS, 2033<br><b>ID:</b> 98155865</div>`)[0];
+                popup_ffc90385e1a6ed690459fa501069a9fd.setContent(html_23be449c337872f11c8bb346a04584f5);
+            
+        
+
+        circle_marker_cfcad5625aeb263abf82237525618478.bindPopup(popup_ffc90385e1a6ed690459fa501069a9fd)
+        ;
+
+        
+    
+    
+            var circle_marker_298967912754343958e5bc6cb65df44a = L.circleMarker(
+                [-25.544988, -54.546368],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_18e40e5c3fad0d5d536034ba107b1ce4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e558a0c690cc0c99c60977e2bcbb7f7f = $(`<div id="html_e558a0c690cc0c99c60977e2bcbb7f7f" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA VALENTIN GARBIN, 533<br><b>ID:</b> 66293977</div>`)[0];
+                popup_18e40e5c3fad0d5d536034ba107b1ce4.setContent(html_e558a0c690cc0c99c60977e2bcbb7f7f);
+            
+        
+
+        circle_marker_298967912754343958e5bc6cb65df44a.bindPopup(popup_18e40e5c3fad0d5d536034ba107b1ce4)
+        ;
+
+        
+    
+    
+            var circle_marker_b9491c0292bc276dc4166e67388c3097 = L.circleMarker(
+                [-25.553851, -54.546252],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_fe13b538a10dcce3cad7861e945e7797 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3ba72949cccaffd88f610ff4fe9681bc = $(`<div id="html_3ba72949cccaffd88f610ff4fe9681bc" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA BARRA DO CORDA, 102<br><b>ID:</b> 212715690</div>`)[0];
+                popup_fe13b538a10dcce3cad7861e945e7797.setContent(html_3ba72949cccaffd88f610ff4fe9681bc);
+            
+        
+
+        circle_marker_b9491c0292bc276dc4166e67388c3097.bindPopup(popup_fe13b538a10dcce3cad7861e945e7797)
+        ;
+
+        
+    
+    
+            var circle_marker_15c250d5d5fe9f74cea9769ac2640bdf = L.circleMarker(
+                [-25.54015, -54.545889],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_4403a21d90b878a70f3fc46bd1804721 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2f996d64c3e3f05b1358aefb77fadeae = $(`<div id="html_2f996d64c3e3f05b1358aefb77fadeae" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA ITATIAIA, 218<br><b>ID:</b> 205953619</div>`)[0];
+                popup_4403a21d90b878a70f3fc46bd1804721.setContent(html_2f996d64c3e3f05b1358aefb77fadeae);
+            
+        
+
+        circle_marker_15c250d5d5fe9f74cea9769ac2640bdf.bindPopup(popup_4403a21d90b878a70f3fc46bd1804721)
+        ;
+
+        
+    
+    
+            var circle_marker_7d39283e4aecc982b0a38f0323d51102 = L.circleMarker(
+                [-25.53982, -54.544177],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_ef744a58cbabde667490a31319b0ce55 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e1ed3c431a2a6af518a66db4b75673b5 = $(`<div id="html_e1ed3c431a2a6af518a66db4b75673b5" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA MANOEL MOREIRA ANDRION, 2375<br><b>ID:</b> 206353862</div>`)[0];
+                popup_ef744a58cbabde667490a31319b0ce55.setContent(html_e1ed3c431a2a6af518a66db4b75673b5);
+            
+        
+
+        circle_marker_7d39283e4aecc982b0a38f0323d51102.bindPopup(popup_ef744a58cbabde667490a31319b0ce55)
+        ;
+
+        
+    
+    
+            var circle_marker_2de2cadbecdafe0c06918afd980219b4 = L.circleMarker(
+                [-25.556353, -54.543843],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_49b850ef7702090031eb482e4a90194e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_97abb0eb535c413f7408b318d1557697 = $(`<div id="html_97abb0eb535c413f7408b318d1557697" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA CARLOS CASTAGNARO, 49<br><b>ID:</b> 98155939</div>`)[0];
+                popup_49b850ef7702090031eb482e4a90194e.setContent(html_97abb0eb535c413f7408b318d1557697);
+            
+        
+
+        circle_marker_2de2cadbecdafe0c06918afd980219b4.bindPopup(popup_49b850ef7702090031eb482e4a90194e)
+        ;
+
+        
+    
+    
+            var circle_marker_dc57ec9d12389c3af4d00f1f12db188a = L.circleMarker(
+                [-25.557008, -54.543619],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_9875951eb81162150069652b2bc02b9a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e0a8c2ab28c9dac0dd26792ef2bbb36b = $(`<div id="html_e0a8c2ab28c9dac0dd26792ef2bbb36b" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA EFIGENIO APARECIDO VIANA, 1921<br><b>ID:</b> 66370055</div>`)[0];
+                popup_9875951eb81162150069652b2bc02b9a.setContent(html_e0a8c2ab28c9dac0dd26792ef2bbb36b);
+            
+        
+
+        circle_marker_dc57ec9d12389c3af4d00f1f12db188a.bindPopup(popup_9875951eb81162150069652b2bc02b9a)
+        ;
+
+        
+    
+    
+            var circle_marker_0eef80025c60ae40aa7ca2b88dbfa179 = L.circleMarker(
+                [-25.555394, -54.543448],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_49ea3ffcfd93d43aacb2573187715590 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_100d88305cdd36516a375afa028b11d4 = $(`<div id="html_100d88305cdd36516a375afa028b11d4" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA ORIDES CAMILO COPINE, 96<br><b>ID:</b> 206540254</div>`)[0];
+                popup_49ea3ffcfd93d43aacb2573187715590.setContent(html_100d88305cdd36516a375afa028b11d4);
+            
+        
+
+        circle_marker_0eef80025c60ae40aa7ca2b88dbfa179.bindPopup(popup_49ea3ffcfd93d43aacb2573187715590)
+        ;
+
+        
+    
+    
+            var circle_marker_99feb365cfc20126f07973ccaec9ae46 = L.circleMarker(
+                [-25.556413, -54.543081],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_4c0bc08bf598536c117582394c658462 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_22b7a5058cd17e151b9d4eeb14ecc5cd = $(`<div id="html_22b7a5058cd17e151b9d4eeb14ecc5cd" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA CARLOS CASTAGNARO, 145<br><b>ID:</b> 66370087</div>`)[0];
+                popup_4c0bc08bf598536c117582394c658462.setContent(html_22b7a5058cd17e151b9d4eeb14ecc5cd);
+            
+        
+
+        circle_marker_99feb365cfc20126f07973ccaec9ae46.bindPopup(popup_4c0bc08bf598536c117582394c658462)
+        ;
+
+        
+    
+    
+            var circle_marker_7dd47a3f9863c6be59981265990c37cd = L.circleMarker(
+                [-25.540657, -54.542888],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+        
+    
+        var popup_0e67bca2f883bcc01e09ba3f3fc1ad48 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fb9e3a3efa9f96d249c976788a123b23 = $(`<div id="html_fb9e3a3efa9f96d249c976788a123b23" style="width: 100.0%; height: 100.0%;"><b>Endereço:</b> RUA MARIO PAULO ALVES, 218<br><b>ID:</b> 66293630</div>`)[0];
+                popup_0e67bca2f883bcc01e09ba3f3fc1ad48.setContent(html_fb9e3a3efa9f96d249c976788a123b23);
+            
+        
+
+        circle_marker_7dd47a3f9863c6be59981265990c37cd.bindPopup(popup_0e67bca2f883bcc01e09ba3f3fc1ad48)
+        ;
+
+        
+    
+    
+            var locate_control_e574f5006fa4d52794cf9b714695c6be = L.control.locate(
+                {}
+            ).addTo(map_00ca067fd1eb866bf73c5511796bb57a);
+            
+                locate_control_e574f5006fa4d52794cf9b714695c6be.start();
+            
+        
+</script>
+</html>
